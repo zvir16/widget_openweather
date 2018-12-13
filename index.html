@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather widget</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/sticky.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-block">
+        <div class='header-span'>Weather in your city</div>
+      </div>
+    </header>
+    <main>
+      <form id='weather-search'>
+        <input type="text" name="weather-input" id='weather-search-input' placeholder='London, UK' autofocus required>
+        <button type='submit' name='btn' id='weather-search-btn'>
+          <i class="material-icons">help_outline</i>
+          <span>Search</span>
+        </button>
+      </form>
+      <section class='weather-data'>
+        <div id='weather-current'></div>
+        <div id='weather-5day'></div>
+      </section>
+      </main>
+  </body>
+</html>

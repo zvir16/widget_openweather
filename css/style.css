@@ -1,0 +1,169 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: rgb(221, 117, 21);
+  z-index: 1;
+}
+
+.header-block {
+  width: 80%;
+  border-bottom: 1px solid rgb(214, 222, 220);
+}
+
+.header-span {
+  width: 280px;
+  border-bottom: 1px solid rgb(221, 117, 21);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather-search {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(221, 117, 21);
+  width: 100%;
+  height: 100px;
+}
+
+#weather-search-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 2.4em;
+  padding: 0 20px;
+}
+
+#weather-search-btn:hover {
+  border-bottom: 1px solid rgb(200, 212, 200);
+  cursor: pointer;
+}
+
+#weather-search-input {
+  width: 280px;
+  height: 2em;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.weather-data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+}
+
+#weather-current {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.weather-current-head {
+  width: 240px;
+  padding: 0 0 15px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.weather-current-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border: 1px solid rgb(214, 222, 220);
+  border-collapse: collapse;
+  width: 240px;
+}
+
+td {
+  border: 1px solid rgb(214, 222, 220);
+  padding: 5px;
+}
+
+#weather-5day {
+  height: 100%;
+}
+
+.weather-5day-table {
+  border: 1px solid rgb(207, 214, 214);
+  width: 650px;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.table-row + .table-row {
+  border-top: 1px solid rgb(207, 214, 214);
+}
+
+.table-row-time {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 10px;
+  width: 35%;
+}
+
+.table-data-temp {
+  padding: 5px 0;
+}
+
+.temp-block {
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  padding: 2px 6px;
+  background-color: rgb(172, 176, 176);
+  color: rgb(243, 250, 242);
+  width: 55px;
+}
+
+.day {
+  background-color: rgb(237, 237, 245);
+  padding: 10px 0;
+}
+
+.day span {
+  padding: 0 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: rgb(255,255,255);
+}
+.sticky + .weather-data {
+  padding-top: 200px;
+}
